@@ -1,0 +1,12 @@
+- name: say 'Hello World!'
+  hosts: dockertesting
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  tasks:
+    - name: echo 'Hello World!'
+      command: echo 'Hello World!'
+      register: result
+
+    - name: print stdout
+      debug:
+        msg: '{{ result.stdout }}'

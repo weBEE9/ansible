@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  ansible-node-1:
+    image: weeee9/ansible-managed-node:alpine3.7
+    ports:
+      - "4444:22"
+
+  ansible-node-2:
+    image: weeee9/ansible-managed-node:alpine3.7
+    ports:
+      - "4445:22"
+

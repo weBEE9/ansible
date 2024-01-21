@@ -1,0 +1,3 @@
+[dockertesting]
+ansible-node-1 ansible_ssh_host=127.0.0.1 ansible_ssh_port=4444 ansible_ssh_pass=docker
+ansible-node-2 ansible_ssh_host=127.0.0.1 ansible_ssh_port=4445 ansible_ssh_pass=docker
